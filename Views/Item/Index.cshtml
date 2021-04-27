@@ -1,0 +1,10 @@
+@model IEnumerable<Item>
+
+<a class="btn btn-primary float-right" asp-controller = "Item" asp-action = "Create"> Create New </a>
+<br><br>
+<div class="jumbotron">
+@foreach (var item in Model)
+{
+    <p> @item.Id. @item.Lender --> @item.Borrower --> @item.Item_Name </p>
+}
+</div>

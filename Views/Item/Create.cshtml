@@ -1,0 +1,16 @@
+@model Item
+
+<h1>Write the input here.</h1>
+
+<form method="POST" asp-action= "Create">
+
+<p>Input for lender</p>
+<input asp-for = "Lender">
+
+<input asp-for = "Borrower">
+
+<input asp-for = "Item_Name">
+
+ <input class="btn btn-success" type="submit" value="Create">
+
+</form>
